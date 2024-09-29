@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      .menu {
+        position: relative;
+      }
+
+      .down {
+        position: absolute;
+        display: none;
+      }
+
+      .menu:hover .down {
+        display: block;
+
+        background-color: rgba(128, 128, 128, 0.374);
+      }
+      .drop {
+        cursor: pointer;
+        margin-left: 60%;
+      }
+
+      .down nav ul {
+        display: flex;
+        gap: 0px;
+        flex-direction: column !important;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .down li {
+        color: white;
+        margin-left: -40%;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0);
+        margin-left: 30%;
+        border-radius: 20px;
+      }
+
+      .formgroup {
+        margin-bottom: 15px;
+        border: none;
+        outline: none;
+        border-bottom: 1.5px solid rgb(3, 1, 19);
+      }
+      .formgroup:hover {
+        border-bottom: 1.5px solid rgba(0, 0, 255, 0.697);
+      }
+
+      .formgroup label {
+        margin-bottom: 5px;
+      }
+      .formgroup input,
+      .formgroup textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: none;
+      }
+      .formgroup textarea {
+        height: 100px;
+      }
+      input :focus {
+        outline: none;
+      }
+      #message,
+      #first-name,
+      #last-name,
+      #email,
+      #subject,
+      fieldset {
+        outline: none;
+        border: none;
+      }
+      .flex {
+        display: flex;
+        gap: 20px;
+      }
+      button {
+        background-color: rgba(0, 0, 255, 0.881);
+        color: white;
+        padding: 10px 30px 10px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }     
+    </style>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(document.querySelector(".loader"));
+        });
+      });
+    </script>
+  </head>
+  <body style="background-color: #e6dace">
+    <div class="loader"></div>
+    <header>
+      <div class="box">
+        <h2>
+          <a href="index.html">Aditya kadam </a><span>/ PROJECT MANAGER</span>
+        </h2>
+      </div>
+      <nav class="nav">
+        <ul>
+          <a href="index.html"><li>ABOUTME</li></a>
+          <a href="resume.html"><li>RESUME</li></a>
+          <a href="project.html"><li>PROJECT</li></a>
+          <a href="contact.html"><li>CONTACT</li></a>
+        </ul>
+      </nav>
+      <div class="menu">
+        <div class="drop">
+          <img src="menu-outline.svg" alt="" width="30px" height="30px" />
+        </div>
+        <div class="down" id="tn">
+          <nav>
+            <ul>
+              <a href="index.html"><li>ABOUT ME</li></a>
+              <a href="resume.html"><li>RESUME</li></a>
+              <a href="project.html"><li>PROJECT</li></a>
+              <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div>
+      <span> <h1 style="margin-left: 45%">Lets Talk</h1></span>
+    </div>
+
+    <div class="container">
+      <form>
+        <div class="flex">
+          <div class="formgroup">
+            <label for="name">First Name*</label>
+            <input type="text" id="first-name" required />
+          </div>
+          <div class="formgroup">
+            <label for="name">Last Name*</label>
+            <input type="text" id="last-name" required />
+          </div>
+        </div>
+        <div class="formgroup">
+          <label for="email">Email*</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="formgroup">
+          <label for="name">Subject*</label>
+          <input type="text" id="subject" required />
+        </div>
+        <div class="formgroup">
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <footer id="foot">
+      <div class="call">
+        <center>
+          <p><strong>Call</strong></p>
+        </center>
+        <p>123-456-789</p>
+      </div>
+      <div class="write">
+        <center>
+          <p><strong>Write</strong></p>
+        </center>
+        <p>Adi.kadam2gmail.com</p>
+      </div>
+      <div class="follow">
+        <center>
+          <p><strong>Follow</strong></p>
+        </center>
+        <a href="https://www.facebook.com/wix"
+          ><img
+            src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"
+            alt=""
+          />
+        </a>
+        <a href="https://www.twitter.com/wix">
+          <img
+            src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+            alt=""
+          />
+        </a>
+        <a href="https://www.linkedin.com/company/wix-com"
+          ><img
+            src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png"
+            alt=""
+          />
+        </a>
+        <a href="https://www.instagram.com/wix"
+          ><img
+            src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

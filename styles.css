@@ -1,0 +1,482 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header .nav  {
+      display: none;
+    }
+    .menu{
+      display: block;
+      width: 20%;
+      margin-right: 4%;
+    }
+    .box h2{
+      padding: 0px 0px 9px 35px !important;
+    }
+    .bgcolor{
+      background-color: #e6dace;
+      width: 100% !important;
+    }
+
+    .card{
+      margin-top: -109% !important;
+     justify-content: center;
+    }
+    .side{
+      width: 50%  !important;
+      margin-top: 100% !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+   .menu{
+      display: none;
+   }
+}
+@media only screen and (max-width: 835px) {
+    .nav ul{
+      display: flex;
+      gap: 30px;
+    }
+    .card{
+      margin-top: -109% !important;
+     justify-content: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 670px) {
+  
+   .menu{
+     display: block;
+     width: 20%;
+     margin-right: 8%;
+   }
+   .box h2 , span{
+     font-size: large !important;
+   }
+   h2::before{
+      width: 20px !important;
+      height: 20px !important;
+   }
+   .bgcolor{
+     background-color: #e6dace;
+     width: 100% !important;
+   }
+   .card{
+      margin-top: -109% !important;
+     justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  
+   .menu{
+     display: block;
+     width: 20%;
+     margin-right: 8%;
+   }
+   .box h2 , span{
+     font-size: large   ;
+     width: 100%;
+     
+   }
+   h2::before{
+      width: 15px !important;
+      height: 15px !important;
+   }
+   .bgcolor{
+     background-color: #e6dace;
+     width: 100% !important;
+   }
+
+
+}
+
+@media only screen and(min-width:500%) {
+   .bgcolor{
+      background-color: #e6dace;
+      width: 100% !important;
+    }
+}
+
+.loader{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ffffff;
+   transition: 2s ease;
+   z-index: 1;
+}
+
+.loader--hidden{
+   opacity: 0;
+   visibility: hidden;
+}
+
+
+
+.resume{
+   background-color: #e6dace;
+}
+
+header{
+    display: flex;
+    background-color: #fff;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    color: black;
+ }
+ .box{
+    position: relative;
+ }
+ .box a{
+   text-decoration: none;
+   color: black;
+ }
+ .box h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px 190px 9px 35px;
+    align-items: center;
+    font-size: xx-large;
+    width: 100%;
+ }
+
+
+
+ span{
+    font-weight: 200;
+    font-size: large;
+ }
+ ul li:hover{
+    color: blue;
+ }
+ header  ul a{
+    text-decoration: none;
+    font-size: 15px;
+ }
+ h2::before{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background-color: blue;
+    margin-top: 2%;
+    left: 0;
+
+ }
+
+ .bgcolor{
+    background-color: #e6dace;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 1000px;
+    z-index: 0;
+}
+
+.card{
+   background-color: #f4ece6;
+   width: 375px;
+   height: 556px;
+   margin-left: 20%;
+   box-shadow:  0px 50px 30px 0px rgba(0, 0, 0, 0.236);
+   z-index: 2;
+   margin-top: -50%;
+   border-top-left-radius: 20px;
+}
+
+.info img{
+   width: 50%;
+   margin: 60px;
+   margin-left: 25%;
+   box-sizing: border-box;
+   border-radius: 90%;
+}
+.info h4{
+   font-weight: 900pz;
+   font-size: 26px;
+   margin-top: -10%;
+   margin-left: 38%;
+   width: 35%;
+}
+hr{
+   width: 13%;
+   border-width: 1px;
+   border-color: blue;
+}
+
+.card span{
+   font-size: 20px;
+   margin-left: 26%;
+   
+}
+.card footer{
+   background-color: #fff;
+   width: 100%;
+   height: 50px;
+   margin-top: 13%;
+   border-bottom-left-radius: 20px;
+}
+
+.card footer img{
+   margin-top: 3%;
+   display: flex;
+   gap: 20px;
+   float: left;
+   margin-left: 3%;
+}
+.footer-image{
+   margin-left: 26%;
+}
+
+.side{
+   background-color: #fff;
+   width: 500px;
+   height: 605.6px;
+   float: right;
+   margin-top: -36.6%;
+   margin-right: 22.5%;
+}
+
+.side h1{
+   margin-left: 35px;
+   font-size: 100px;
+}
+
+.side button{
+   margin-left: 40px;
+   display: inline-flex;
+   margin-top: -5%;
+   background-color: white;
+   padding: 10px 30px 10px 30px;
+   border: 0.5px solid black;
+   border-radius: 50px; 
+   box-sizing: border-box;
+   transition: all;
+}
+button{
+   font-size: 15px;
+   cursor: pointer;
+}
+.btn1{
+   background-color: rgba(0, 0, 255, 0.789) !important;
+   color: white !important; 
+   border: none !important;
+   transition: all;
+   cursor: pointer;
+}
+.btn2:hover{
+   background-color: rgba(0, 0, 255, 0.8);
+   color: white;
+   border: none;
+   font-size: 15px !important;
+   transition: ease 0.5s;
+}
+
+.btn1:hover{
+   background-color: rgb(255, 255, 255) !important;
+   color: rgb(0, 0, 0) !important;
+   transition: ease 0.5s;
+   border: 1px solid rgba(31, 3, 242, 0.685) !important;
+   font-size: 15px !important;
+}
+.side p{
+   margin-top: 9%;
+   margin-left: 39px;
+   font-weight: 300;
+}
+
+#foot{
+   background-color: #fff;
+   width: 100%;
+   height: 100px;
+   margin-top: 12%;
+   display: flex;
+   justify-content: space-around; 
+}
+
+.call{
+   align-content: center;
+}
+.write{
+   align-content: center;
+}
+.follow{
+   align-content: center;
+}
+
+span h1::before{
+   position: absolute;
+   width: 23px;
+   height: 23px;
+   content: "";
+   background-color: blue;
+   margin-left: -2.5%;
+   margin-top: 1%;
+   z-index: 0;
+}
+
+span h1{
+   padding: 0px 190px 9px 35px;
+}
+
+.upper-head{
+   display: flex;
+   gap: 30%;
+   align-items: center;
+   margin-left: 32%;
+}
+.upper-head h3{
+   font-size: 25px;
+}
+.upper-head .btn1{
+   padding: 10px 20px 10px 20px;
+   border-radius: 50px;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.expi{
+   background-color: white;
+   width: 600px;
+   height: 500px;
+   margin-left: 32%;
+}
+
+
+
+span h1::before{
+   position: absolute;
+   width: 23px;
+   height: 23px;
+   content: "";
+   background-color: blue;
+   margin-left: -2.5%;
+   margin-top: 1%;
+   
+}
+
+.para p{
+   font-weight: 300;
+   width: 45%;
+   text-align: center;
+   margin-left: 29%;
+   padding-bottom: 40px;
+   padding-top: 20px;
+}
+
+.projects{
+   width: 100%;
+   display: flex;
+   gap: 50px;
+   justify-content: space-around;
+}
+.project1{
+   width: 700px;
+   height: 404px;
+   background-color: white;
+   margin-left: 1%;
+   box-sizing: border-box;
+   padding: 40px;
+   margin-bottom: 5%;
+   border-radius: 10px;
+}
+.head{
+   border-left: 10px solid blue;
+   margin-left: -6%;
+}
+
+.project1 h3,h6{
+      margin: 0;
+      height: auto;
+      margin-left: 4%;    
+}
+.project1 h3{
+   font-size: 20px;
+   color: rgba(0, 0, 255, 0.877);
+}
+
+.project1 p{
+   width: 50%;
+   padding-top: 50px;
+   font-weight: 300;
+}
+ .image1{
+   margin-left: 54.3%;
+   margin-top: -55.6%;
+   padding: 0;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.image2{
+   margin-left: 54.3%;
+   margin-top: -59.5%;
+   padding: 0;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.mbtn{
+   display: flex;
+   gap: 20px;
+}
+.project1 button{
+   margin-top: 1%;
+   background-color: white;
+   padding: 7px 20px 7px 20px;
+   border: 0.5px solid black;
+   border-radius: 50px; 
+   box-sizing: border-box;
+   transition: all;
+}
+.btn3{
+   background-color: rgba(0, 0, 255, 0.789) !important;
+   color: white !important; 
+   border: none !important;
+}
+.btn4{
+   background-color: rgba(0, 0, 255, 0.789) !important;
+   color: white !important; 
+   border: none !important;
+}
+.btn3:hover{
+   color: black !important;
+   border: 1px solid black !important;
+   background-color: white !important;
+   transition: ease 0.5s;
+}
+.btn4:hover{
+   color: black !important;
+   border: 1px solid black !important;
+   background-color: white !important;
+   transition: ease 0.5s;
+}
+
+
+
+
+
+
